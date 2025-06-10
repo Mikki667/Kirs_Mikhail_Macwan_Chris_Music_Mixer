@@ -1,0 +1,9 @@
+.hidden {
+    display: none;
+}
+
+header h2 {
+    text-align: center;
+    background-color: blueviolet;
+    padding: 20px;
+}
