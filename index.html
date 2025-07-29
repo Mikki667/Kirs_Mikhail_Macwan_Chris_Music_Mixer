@@ -12,8 +12,59 @@
         <h2>Music Mixer</h2>
     </header>
     <main>
+        <section class="music_mixer">
+            <section class="audio-panel">
+                <h2 class="hidden">Audio Panel</h2>
+                <div id="audio-bo">
+                    <div class="audio-item" draggable="true" data-sound="sound5">
+                        <audio src="sounds/sound5.wav"></audio>
+                        <p>music 1</p>
+                    </div>
+                    <div class="audio-item" draggable="true" data-sound="sound2">
+                        <audio src="sounds/sound2.wav"></audio>
+                       <p>music 2</p>
+                    </div>
+                    <div class="audio-item" draggable="true" data-sound="sound7">
+                        <audio src="sounds/sound7.wav"></audio>
+                        <p>music 3</p>
+                    </div>
+                    <div class="audio-item" draggable="true" data-sound="sound8">
+                        <audio src="sounds/sound8.wav"></audio>
+                        <p>music 4</p>
+                    </div>
+                    <div class="audio-item" draggable="true" data-sound="sound8">
+                        <audio src="sounds/sound1.wav"></audio>
+                        <p>music 5</p>
+                    </div>
+                    <div class="audio-ite" draggable="true" data-sound="sound6">
+                        <audio src="sounds/sound6.wav"></audio>
+                        <p>music 6</p>
+                     </div>
+                </div>
+            </section>
+                <div class="thespeaker">
+                    <img src="images/speaker.svg" alt="speaker">
+                </div>
+                <div class="thedjpannel">
+                    <img src="images/djpannel.svg" alt="djpannel">
+                    <div class="target-zone" id="sound1"></div>
+                    <div class="target-zone" id="sound2"></div>
+                    <div class="target-zone" id="sound3"><div>
+                    <div class="target-zone" id="sound4"><div>
+                    <section class="audio-controls">
+                        <img src="images/play.png" alt="Play" id="playButton" class="control-btn">
+                        <img src="images/pause.png" alt="Pause" id="pauseButton" class="control-btn">
+                        <input id="volumeControl" type="range" min="0" max="100" step="1">
+                        <img src="images/reset.png" alt="Reset" id="resetButton" class="control-btn">
+                    </section>
+                </div>
+        </section>
     </main>
 
     <script src="js/main.js"></script>
 </body>
+<footer>
+    <h2 class="hidden">Footer</h2>
+    <h2>Music Mixer</h2>
+</footer>
 </html>
