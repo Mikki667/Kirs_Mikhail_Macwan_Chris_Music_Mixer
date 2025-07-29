@@ -8,14 +8,16 @@
 </head>
 <body>
     <header>
-        <h1 class="hidden"> Welcome to my Music Mixer</h1>
-        <h2>Music Mixer</h2>
+        <div class="header">
+            <h1 class="hidden"> Welcome to our Music Mixer</h1>
+            <h2>Music Mixer</h2>
+        </div>
     </header>
     <main>
         <section class="music_mixer">
             <section class="audio-panel">
                 <h2 class="hidden">Audio Panel</h2>
-                <div id="audio-bo">
+                <div id="audio-box">
                     <div class="audio-item" draggable="true" data-sound="sound5">
                         <audio src="sounds/sound5.wav"></audio>
                         <p>music 1</p>
@@ -32,11 +34,11 @@
                         <audio src="sounds/sound8.wav"></audio>
                         <p>music 4</p>
                     </div>
-                    <div class="audio-item" draggable="true" data-sound="sound8">
+                    <div class="audio-item" draggable="true" data-sound="sound1">
                         <audio src="sounds/sound1.wav"></audio>
                         <p>music 5</p>
                     </div>
-                    <div class="audio-ite" draggable="true" data-sound="sound6">
+                    <div class="audio-item" draggable="true" data-sound="sound6">
                         <audio src="sounds/sound6.wav"></audio>
                         <p>music 6</p>
                      </div>
@@ -49,8 +51,8 @@
                     <img src="images/djpannel.svg" alt="djpannel">
                     <div class="target-zone" id="sound1"></div>
                     <div class="target-zone" id="sound2"></div>
-                    <div class="target-zone" id="sound3"><div>
-                    <div class="target-zone" id="sound4"><div>
+                    <div class="target-zone" id="sound3"></div>
+                    <div class="target-zone" id="sound4"></div>
                     <section class="audio-controls">
                         <img src="images/play.png" alt="Play" id="playButton" class="control-btn">
                         <img src="images/pause.png" alt="Pause" id="pauseButton" class="control-btn">
@@ -60,11 +62,12 @@
                 </div>
         </section>
     </main>
-
     <script src="js/main.js"></script>
 </body>
 <footer>
-    <h2 class="hidden">Footer</h2>
-    <h2>Music Mixer</h2>
+    <div class="footer">
+        <h2 class="hidden">Footer</h2>
+        <h2>Music Mixer</h2>
+    </div>
 </footer>
 </html>
