@@ -2,8 +2,169 @@
     display: none;
 }
 
-header h2 {
+body {
+  background-color:#cfa2e0;
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header h2 {
     text-align: center;
-    background-color: blueviolet;
-    padding: 20px;
+    background: linear-gradient(150deg, rgb(207, 8, 217), rgb(95, 8, 194), #b70b81);
+    padding: 30px;
+    color: white;
+    font-size: 24px;
+    border: 3px solid black;
+}
+
+.audio-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0px auto;
+  max-width: 430px;
+}
+
+#audio-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;     
+}
+
+.audio-item {
+  width: 50px;           
+  padding: 8px;           
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #cfa2e0;
+  cursor: grab;
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+.audio-item:hover {
+  transform: scale(1.05);
+}
+
+.audio-item p {
+  margin-top: 6px;
+  font-size: 13px;
+  text-align: center;
+  color: #000;
+}
+
+.music_mixer {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url("../images/music_mix_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.thespeaker, .thedjpannel {
+  position: absolute;
+}
+
+.thespeaker {
+  top: 120px;
+  left: 50px;
+}
+
+.thedjpannel {
+  top: 40px; 
+  left: 450px; 
+}
+
+.thespeaker img {
+  width: 600px;
+  height: auto;
+}
+
+.thedjpannel img {
+  width: 950px;
+  height: auto;
+}
+
+.target-zone {
+  position: absolute;
+  border-radius: 20%;
+  background-color: #cfa2e0;
+  border: 2px solid black;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+#sound1 {
+  top: 178px;
+  right: 382px;
+}
+
+#sound2 {
+  top: 178px;
+  right: 324px;
+}
+
+#sound3 {
+  top: 230px;
+  right: 382px;
+    
+}
+
+#sound4 {
+  top: 230px;
+  right: 324px;
+}
+
+.audio-controls {
+  position: absolute;
+  top: 300px;       
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: max-content;
+  text-align: center;
+  z-index: 10;
+}
+
+.control-btn {
+  width: 40px;
+  height: 40px;
+  margin: 0 6px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.audio-controls img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+#volumeControl {
+  width: 120px;
+  vertical-align: middle;
+}
+
+.footer h2 {
+  text-align: center;
+  background: linear-gradient(150deg, rgb(207, 8, 217), rgb(95, 8, 194), #b70b81);
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  border: 3px solid black;
 }
