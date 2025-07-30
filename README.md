@@ -28,7 +28,7 @@ html and css update
 
 ## Credits
 
-Mikhail Kirs
+Mikhail Kirs and Macwan Chris
 
 ## License
 
